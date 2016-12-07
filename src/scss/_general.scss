@@ -1,0 +1,16 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Helvetica Neue", "Open Sans", sans-serif;
+    background : #ededed;
+    margin     : 0;
+    position   : relative;
+}

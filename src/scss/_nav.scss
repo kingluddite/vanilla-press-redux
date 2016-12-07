@@ -1,0 +1,30 @@
+.view {
+    .main-nav {
+        margin     : 10px;
+        font-family: "Montserrat";
+        margin     : 40px 0 20px;
+
+        ul {
+            padding   : 0;
+            margin    : 0;
+            text-align: center;
+
+            li {
+                display   : inline-block;
+                list-style: none;
+                padding   : 0 0 0 5px;
+                margin    : 0;
+            }
+
+            li a {
+                color          : $black;
+                padding        : 10px;
+                text-decoration: none;
+
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+    }
+}

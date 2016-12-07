@@ -1,0 +1,30 @@
+{
+  "name": "vanilla-press-redux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "build": "webpack --progress --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^5.0.0",
+    "webpack": "^2.1.0-beta.27",
+    "autoprefixer": "^6.3.6",
+    "extract-text-webpack-plugin": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-es2015-native-modules": "^6.9.4",
+    "browser-sync": "^2.18.1",
+    "css-loader": "^0.26.1",
+    "node-sass": "^3.9.1",
+    "path": "^0.12.7",
+    "postcss-loader": "^1.0.0",
+    "sass-loader": "^4.0.1",
+    "style-loader": "^0.13.1"
+  }
+}

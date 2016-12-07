@@ -1,0 +1,130 @@
+.view {
+    background: $white;
+    padding   : 40px 20px;
+
+    p {
+        font-family: "Helvetica Neue", "Open Sans", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat";
+        font-weight: normal;
+    }
+
+    .container {
+        margin   : 20px auto 0;
+        max-width: 960px;
+
+        .page-header {
+            text-align: center;
+        }
+
+        .content {
+            background: $white;
+            padding   : 10px 20px;
+            border    : 1px $light-grey solid;
+
+            .primary {
+                width  : calc(100% - 20px);
+                padding: 10px;
+            }
+
+            .sidebar {
+                width  : calc(100% - 20px);
+                padding: 10px;
+                border : 1px solid $black;
+            }
+
+            /* add article styles */
+        }
+    }
+
+    .primary p {
+        font-size: 1rem;
+    }
+
+    .page-header {
+        h1 {
+            font-family: "Pacifico";
+            font-size  : 2.2rem;
+            margin     : 1rem 0 0;
+            color      : $black;
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        h2 {
+            font-size  : 1.2rem;
+            line-height: 2rem;
+            color      : $black;
+        }
+
+    }
+
+    .sidebar p {
+        font-size: 1rem;
+    }
+
+    .footer p {
+        font-size  : 0.8rem;
+        font-family: "Montserrat";
+        text-align : center;
+        font-weight: lighter;
+    }
+}
+
+.wrapper {
+    display         : box;
+    display         : flex;
+    box-orient      : horizontal;
+    box-direction   : normal;
+    flex-direction  : row;
+    height          : 100vh;
+    background-color: $black;
+
+    .view {
+        box-flex  : 3;
+        flex      : 3;
+        padding   : 0 10px;
+        background: $gallery;
+
+        a {
+            color: $bondi-blue;
+        }
+
+        .content {
+            display       : block;
+            clear         : both;
+            /* box is old syntax */
+            display       : box;
+            display       : flex;
+            box-orient    : horizontal;
+            box-direction : normal;
+            flex-direction: row;
+            /* primary will take up 3 columns
+             * sidebar will take up 1 column
+             */
+            .primary {
+                /* old syntax? */
+                box-flex: 3;
+                /* what will flex-grow be
+                 * It dictates what amount of the available space inside the flex container the item should take up.
+                 */
+                flex    : 3;
+            }
+
+            .sidebar {
+                box-flex: 3;
+
+                flex    : 1;
+            }
+        }
+    }
+}
